@@ -84,3 +84,57 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// project default animations
+
+// demo
+
+// IMAGE LIGHTBOX
+
+const images = document.querySelectorAll(".gallery-img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img => {
+
+img.addEventListener("click", () => {
+
+lightbox.style.display="flex";
+lightboxImg.src = img.src;
+
+});
+
+});
+
+lightbox.addEventListener("click", () => {
+
+lightbox.style.display="none";
+
+});
+
+
+// COUNTER ANIMATION
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+let start = 0;
+let end = parseInt(counter.textContent);
+
+let duration = 2000;
+let step = Math.ceil(end / (duration / 20));
+
+let interval = setInterval(()=>{
+
+start += step;
+
+if(start >= end){
+start = end;
+clearInterval(interval);
+}
+
+counter.textContent = start;
+
+},20);
+
+});
