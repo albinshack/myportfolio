@@ -42,6 +42,7 @@ padding:80px 0;
 .section-title{
 margin-bottom:40px;
 text-align:center;
+
 }
 
 /* SKILLS */
@@ -98,11 +99,12 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
 
 /* CONTACT */
 
-.contact-box{
-text-align:center;
-padding:30px;
-border-radius:10px;
-background:#f4f4f4;
+.contact-box {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: #f4f4f4;
+  color: #111; /* <-- make text dark so it’s visible */
 }
 
 /* FOOTER */
@@ -120,203 +122,3 @@ margin:0 10px;
 color:white;
 }
 
-
-/* Project styles pages default */
-
-/* demo */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#0f172a;
-color:white;
-}
-
-/* HERO */
-
-.hero{
-
-height:100vh;
-background:linear-gradient(135deg,#6366f1,#8b5cf6,#ec4899);
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:60px;
-margin-bottom:10px;
-
-}
-
-.hero p{
-
-font-size:20px;
-opacity:0.9;
-
-}
-
-.hero-tags{
-
-margin-top:20px;
-
-}
-
-.hero-tags span{
-
-background:rgba(255,255,255,0.2);
-padding:8px 20px;
-border-radius:30px;
-margin:5px;
-
-}
-
-/* SECTION */
-
-.section{
-
-padding:120px 20px;
-
-}
-
-.container{
-
-max-width:1000px;
-margin:auto;
-
-}
-
-.section h2{
-
-font-size:36px;
-margin-bottom:40px;
-
-}
-
-/* GLASS CARD */
-
-.glass-card{
-
-background:rgba(255,255,255,0.05);
-padding:40px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
-
-}
-
-/* DARK */
-
-.dark{
-
-background:#020617;
-
-}
-
-/* STATS */
-
-.stats{
-
-display:flex;
-gap:40px;
-justify-content:center;
-flex-wrap:wrap;
-
-}
-
-.stat{
-
-text-align:center;
-
-}
-
-.stat h3{
-
-font-size:50px;
-color:#38bdf8;
-
-}
-
-/* GALLERY */
-
-.gallery{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
-}
-
-.gallery img{
-
-width:100%;
-border-radius:15px;
-cursor:pointer;
-transition:0.4s;
-
-}
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
-}
-
-/* LIGHTBOX */
-
-.lightbox{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.9);
-display:none;
-align-items:center;
-justify-content:center;
-
-}
-
-.lightbox img{
-
-max-width:80%;
-border-radius:10px;
-
-}
-
-/* BUTTON */
-
-.btn-back{
-
-background:#6366f1;
-padding:12px 30px;
-border-radius:30px;
-text-decoration:none;
-color:white;
-
-}
-
-/* FLOATING GITHUB */
-
-.floating-github{
-
-position:fixed;
-top:30px;
-right:30px;
-background:#111;
-padding:12px 20px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
-
-}
